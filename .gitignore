@@ -4,6 +4,7 @@
 [Ll]og/
 [Ll]ogs/
 llama-bin/
+*.zip
 
 ## User Settings & Local Profile Data
 settings.json
