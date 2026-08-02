@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>LlamaLauncher</AssemblyName>
+    <RootNamespace>LlamaLauncher</RootNamespace>
+
+    <!-- Assembly & Product Information -->
+    <Product>LlamaLauncher</Product>
+    <Title>LlamaLauncher</Title>
+    <Authors>LlamaLauncher Team</Authors>
+    <Company>LlamaLauncher</Company>
+    <Description>Fast local llama.cpp model server manager with CUDA detection and VRAM estimation</Description>
+    <Copyright>Copyright © 2026</Copyright>
+    <Version>1.2.0</Version>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <FileVersion>1.2.0.0</FileVersion>
+
+    <!-- Self-contained single-file publish: no .NET runtime required on target machine -->
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <!-- Compress embedded runtime assemblies: reduces exe from ~154 MB to ~85-95 MB -->
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <!-- Trimming disabled: WinForms uses reflection heavily and trimming breaks it -->
+    <PublishTrimmed>false</PublishTrimmed>
+
+    <!-- Embed the application icon as a resource -->
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <!-- No external NuGet packages needed — System.Text.Json is built into .NET 8 -->
+
+</Project>

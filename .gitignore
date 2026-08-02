@@ -1,0 +1,29 @@
+## Build & Output Directories
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+llama-bin/
+
+## User Settings & Local Profile Data
+settings.json
+profiles.json
+*.corrupt*
+installed_version.txt
+
+## Visual Studio & IDE Files
+.vs/
+.idea/
+.vscode/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+## Windows System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+## Temporary Scratch Scripts
+scratch/
